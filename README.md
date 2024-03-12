@@ -1,2 +1,1 @@
-# Dynamic GPT Assistant
- It's a GPT Assistant which dynamically deals with real-time data.
+From my YouTube Video: https://www.youtube.com/watch?v=u1Ks5PgSZmE
