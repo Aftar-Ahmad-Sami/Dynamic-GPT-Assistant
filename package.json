@@ -1,7 +1,7 @@
 {
   "name": "test",
   "version": "1.0.0",
-  "description": "From my YouTube Video: https://www.youtube.com/watch?v=u1Ks5PgSZmE",
+  "description": "",
   "main": "index.js",
   "type": "module",
   "scripts": {
@@ -11,9 +11,13 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@google-cloud/local-auth": "^2.1.0",
+    "@shopify/shopify-api": "^9.5.0",
     "@woocommerce/woocommerce-rest-api": "^1.0.1",
     "axios": "^1.6.7",
     "dotenv": "^16.4.3",
+    "googleapis": "^105.0.0",
+    "http-server": "^14.1.1",
     "openai": "^4.28.0"
   }
 }
