@@ -1,5 +1,5 @@
 import axios from "axios";
-import { config } from "../config.js";
+import { config } from "../config/config.js";
 /**
  * Connects to WordPress and retrieves an authentication token.
  * @returns {Promise<string>} The authentication token.

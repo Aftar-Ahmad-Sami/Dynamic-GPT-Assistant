@@ -1,17 +1,7 @@
-// Copyright 2012 Google LLC
-// Licensed under the Apache License, Version 2.0 (the "License");
-// you may not use this file except in compliance with the License.
-// You may obtain a copy of the License at
-//
-//    http://www.apache.org/licenses/LICENSE-2.0
-//
-// Unless required by applicable law or agreed to in writing, software
-// distributed under the License is distributed on an "AS IS" BASIS,
-// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-// See the License for the specific language governing permissions and
-// limitations under the License.
-
 'use strict';
+
+import { config } from '../config/config.js';
+import { keys } from '../googleCredentials.js';
 
 const fs = require('fs');
 const path = require('path');
@@ -26,7 +16,7 @@ const plus = google.plus('v1');
 /**
  * To use OAuth2 authentication, we need access to a a CLIENT_ID, CLIENT_SECRET, AND REDIRECT_URI.  To get these credentials for your application, visit https://console.cloud.google.com/apis/credentials.
  */
-const keyPath = '/credentials.json'
+// const keyPath = '/credentials.json'
 // let keys = {redirect_uris: ['']};
 // if (fs.existsSync(keyPath)) {
 //   keys = require(keyPath).web;
@@ -35,20 +25,6 @@ const keyPath = '/credentials.json'
 /**
  * Create a new OAuth2 client with the configured keys.
  */
-const keys = {
-      "client_id": "779561476634-dahuuo6pnfadgotcmvoc0ghnhe5cl2vs.apps.googleusercontent.com",
-      "project_id": "medical-412107",
-      "auth_uri": "https://accounts.google.com/o/oauth2/auth",
-      "token_uri": "https://oauth2.googleapis.com/token",
-      "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
-      "client_secret": "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",
-      "redirect_uris": [
-          "https://localhost:8000"
-      ],
-      "javascript_origins": [
-          "https://localhost:8000"
-      ]
-}
 
 const oauth2Client = new google.auth.OAuth2(
   keys.client_id,
